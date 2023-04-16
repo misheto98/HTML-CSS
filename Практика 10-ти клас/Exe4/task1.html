@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: bisque;
+        }
+        h1{
+            background-color: palevioletred;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 >Check the name </h1>
+    <label for="checkbox">Name:</label>
+    <input id="checkbox" disabled/>
+    <button type="button" id="button">Write</button>
+
+    <script>
+        document.getElementById("button").addEventListener("click",function(){
+        
+            let inputField =  document.getElementById("checkbox");
+        
+            inputField.removeAttribute("disabled")
+           
+        })
+    </script>
+</body>
+</html>

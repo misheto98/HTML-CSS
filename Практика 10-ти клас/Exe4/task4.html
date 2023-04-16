@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: darkolivegreen;
+        }
+    </Style>
+
+</head>
+<body>
+    <h1>Input filter list</h1>
+    <input id="input" placeholder="Filter..."/>
+    <ul id="list">
+        <li>Paris</li>
+        <li>Berlin</li>
+        <li>New York</li>
+        <li>Sao Paulo</li>
+        <li>Hong Kong</li>
+        <li>Vienna</li>
+    </ul>
+    <script>
+        const input = document.getElementById('input')
+        input.addEventListener('input', function() {
+            
+            let ul = document.getElementById("list")
+            let listItems = ul.children;
+
+            for(let i = 0; i < listItems.length; i++){
+
+                let currentListItem = listItems[i]
+                let currentListItemValue = currentListItem.textContent.toUpperCase()
+                let filter = input.value.toUpperCase()
+                let serchingIndex = currentListItemValue.indexOf(filter)
+                
+                  
+                if(serchingIndex > -1){
+                    console.log(currentListItem.style.displey = "")
+                }else{
+                    console.log(currentListItem.style.display = "none")
+                }
+            }
+        });
+    </script>
+</body>
+</html>

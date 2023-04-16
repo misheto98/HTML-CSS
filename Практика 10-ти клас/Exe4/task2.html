@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get full-name from inputs</h1>
+    <input id="firstName" placeholder="Max" value="Mihaela"/>
+    <input id="lastName" placeholder="Musterman" value="Mihaylova"/>
+    <input id="fullName" placeholder="full name" readonly/>
+    <button type="button" id="button">Show</button>
+
+    <script>
+        const button = document.getElementById('button');
+        button.addEventListener('click' , function(){
+            let firstName = document.getElementById("firstName").value
+            let lastName = document.getElementById("lastName").value
+            document.getElementById("fullName").value = `${firstName} ${lastName}`
+        });
+    </script>
+</body>
+</html>

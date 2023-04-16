@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+        }
+        h1{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Query descendent HTML elements</h1>
+    
+    <div id="wrapper">
+        <input value="OFF" readonly/>
+        <button type="button">Change</button>
+    </div>
+
+    <script>
+        const buttonElem = document.getElementsByTagName("button")[0]
+        const inputElem = document.getElementsByTagName("input")[0]
+
+        buttonElem.addEventListener('click', () => {
+            let oldText = inputElem.value;
+            inputElem.value = oldText === "ON" ? "OFF" : "ON"
+        });
+
+    </script>
+</body>
+</html>
