@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>FORM HTML</title>
+</head>
+
+<body>
+
+    <form action="action.php" method="post">
+        <fieldset>
+            <legend>Иннформация:</legend>
+
+
+            <label for="Fname">Име:</label><br>
+            <input id="fname" type="text" name="firstname" size="30" maxlength="15">
+            <br><br>
+
+            <label for="lname">Фамилия:</label><br>
+            <input id="lname" type="text" name="lastname" size="30" value="Стоянов">
+            <br><br>
+
+            <label for="email">Имейл</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            ИЗБЕРИ ПОЛ:<br>
+
+            <input id="male" type="radio" name="gender" value="male" checked>
+            <lable for="male">Мъж</lable><br>
+            <input id="male" type="radio" name="gender" value="female">
+            <lable for="male">Жена</lable><br><br>
+
+            ОБРАЗОВАНИЕ:<br>
+            <input type="checkbox" name="education" id="primary">
+            <label for="primary">Основно</label><br>
+            <input type="checkbox" name="education" id="secondary">
+            <label for="secondary">Средно</label><br>
+            <input type="checkbox" name="education" id="hight">
+            <label for="primary">Висше</label>
+            <br><br>
+
+
+            <label name="city">Избери град:</label><br>
+            <select name="city" id="city">
+                <option value="choose" selected disabled hidden>----Избери град-----</option>
+                <option value="">Sofia</option>
+                <option value="">Varna</option>
+                <option value="">Plovdiv</option>
+
+            </select>
+            <br><br>
+
+            <label for="">Коментар</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Постави коментар"></textarea>
+            <br><br>
+
+            <input type="submit" value="Изпрати">
+            <input type="reset" value="Изчисти">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

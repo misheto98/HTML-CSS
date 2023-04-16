@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 60%;
+            text-align: center;
+        }
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th,td{
+            padding: 8px;
+        }
+
+        thead{
+            background-color: coral;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Продукти от потребителска кошница</h1>
+
+    <table>
+        <caption>Продукти от първа необходимост</caption>
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Продукт</th>
+                <th>Цена</th>
+                <th>Цена с ДДС</th>
+                <th>ДДС %</th>
+            </tr>
+
+        </thead>
+
+        <tfoot>
+
+        </tfoot>
+        <tr>
+            <td>1</td>
+            <td>Мляко</td>
+            <td>3,00лв</td>
+            <td>3,60</td>
+            <td rowspan="3">20%</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Яйца</td>
+            <td>0,30лв</td>
+            <td>0,36</td>
+           
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Олио</td>
+            <td>5,12лв</td>
+            <td>6,40</td>
+            
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Хляб</td>
+            <td>1,50лв</td>
+            <td>1,50</td>
+            <td>0%</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Вино</td>
+            <td>11,00лв</td>
+            <td>12,00</td>
+            <td>9%</td>
+        </tr>
+
+        <tbody>
+            <tr>
+                <td colspan="5">9% ДДС за ресторантьори и търговци на бебешки стоки</td>
+                
+              
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+    
+</body>
+</html>

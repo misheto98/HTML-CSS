@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box; /* да не се размества страницата*/
+}
+
+.container{
+    position: relative;
+    top:0;
+    left:0;
+    width: 50%;
+    border: 5px solid black;
+}
+
+img{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.text_top , .text_bottom{
+    color:white;
+    padding:10px;
+}
+
+.text_top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text_bottom{
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 100%;
+   background:linear-gradient((rgba(0, 0, 0,0),rgba(0, 0, 0, 0.8)));
+}
+
+.text_botton h2{
+    margin-top: 0.33em;
+    margin-bottom: 0.33em;
+}
+
+.text_botton p{
+    margin: 0;
+}

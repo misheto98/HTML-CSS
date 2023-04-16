@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запитване за резервация</title>
+</head>
+<body>
+    <h3>Формуляр за резервация</h3>
+    <form action="regform.php" method="get">
+        <label for="name">Име:<span>*</span></label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <lable for="email">Имейл:</lable>
+        <input type="email" name="email" id="email" placeholder="mail@example.com" required>
+        <br><br>
+        <label for="phone">Телефон:</label>
+        <input type="tel" name="phone" id="phone" placeholder="01234-456-789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+        <lable for="hotel">Място на хотела:<span>*</span></lable>
+        <input list="'hotel" name="hotelplace">
+        <datalist id="hotel">
+
+            <option value="Варна">
+            <option value="Бурса">
+            <option value="Созопол">
+            <option value="Несебър">
+
+        </datalist>
+        <br><br>
+        <label for="people">Хора за настаняване:</label>
+        <input type="number" name="people" id="people" value="1" min="1">
+        <br><br>
+        <label for="room">Стая:</label><br>
+        <select name="room" id=""room>
+            <option value="makeachoice" disabled hidden selected>----Избери стая</option>
+            <option value="single">Едничка</option>
+            <option value="double">Двойна</option>
+            <option value="studio">Студио</option>
+
+        </select>
+        <br><br>
+        <lable for="date">Дата за настаняване</lable><br>
+        <input type="date" name="data" id="date" min="2023-01-06">
+        <br><br>
+        <label for="nights">Брой нощувки:</label>
+        <input type="range" name="nights" id="nights" min="1" max="14">
+        <br><br>
+
+
+
+        <input type="submit" value="Изпрати">
+    </form>
+    
+</body>
+</html>
